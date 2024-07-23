@@ -42,8 +42,8 @@ mpl.rcParams['axes.prop_cycle'] = mpl.cycler(color=colors) # Set the color palet
 # In[ ]:
 
 
-user_params = {"BOX_LEN": 100, 
-               "HII_DIM": 25, 
+user_params = {"BOX_LEN": 600, 
+               "HII_DIM": 40, 
                "N_THREADS": 6,
                "OUTPUT_AT_DARK_AGES": False, # We are not interested in having any output during the dark ages in this tutorial
                "EVALUATE_TAU_REIO": False} # Since we don't study the CMB power spectrum in this tutorial, we do not calculate tau_reio from the simulation
@@ -302,11 +302,11 @@ fig2, ax2 = plotting.plot_1d_power_spectrum(power_spectrum_HERA, k=0.3, x_kind =
                                           label='$k = 0.3\,{ Mpc^{-1}}$',
                                           ax=ax2)
 
-fig2, ax2 = plotting.plot_1d_power_spectrum(power_spectrum_HERA, k=0.5, x_kind = 'frequency',
+fig2, ax2 = plotting.plot_1d_power_spectrum(power_spectrum_HERA, k=0.05, x_kind = 'frequency',
                                           smooth=True,
                                           noise_data=HERA_noise_data,
                                           redshift_axis_on_top=True,
-                                          label='$k = 0.5\,{ Mpc^{-1}}$',
+                                          label='$k = 0.05\,{ Mpc^{-1}}$',
                                           ax=ax2)
 
 ax2.set_ylabel('$\Delta^2_{21}\,[mK^2]$')
@@ -335,12 +335,12 @@ fig3, ax3 = plotting.plot_1d_power_spectrum(power_spectrum_HERA, k=0.3, x_kind =
                                           label='$k = 0.3\,{ Mpc^{-1}}$',
                                           ax=ax3)
 
-fig3, ax3 = plotting.plot_1d_power_spectrum(power_spectrum_HERA, k=0.5, x_kind = 'frequency',
+fig3, ax3 = plotting.plot_1d_power_spectrum(power_spectrum_HERA, k=0.05, x_kind = 'frequency',
                                           smooth=True, 
                                           noise_data=HERA_noise_data,
                                           redshift_axis_on_top=True,
                                           error_bars = True,
-                                          label='$k = 0.5\,{ Mpc^{-1}}$',
+                                          label='$k = 0.05\,{ Mpc^{-1}}$',
                                           ax=ax3)
 
 ax3.set_ylabel('$\Delta^2_{21}\,[mK^2]$')
