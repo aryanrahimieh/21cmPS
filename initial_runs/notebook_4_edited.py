@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import py21cmfast as p21c # To run 21cmFirstCLASS (21cmFAST)
 from py21cmfast import plotting # For plotting global signals, coeval boxes, lightcone boxes and power spectra
 import py21cmfast.power_spectrum as ps # Calculate power spectrum from the lightcone
+from IPython.display import Latex
 
 
 # It is VERY recommended for 21cmFirstCLASS users to have the 'latex' package installed in the same python environment where 21cmFirstCLASS is installed. <br>
